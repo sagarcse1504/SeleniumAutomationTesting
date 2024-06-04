@@ -21,13 +21,11 @@ public class AutomationPracticeForm {
 
         driver.findElement(By.id("name")).sendKeys("Sagar Arafat");
         driver.findElement(By.id("email")).sendKeys("sagar@gmail.com");
-       // driver.findElement(By.id("gender")).click();
-
-
+        // driver.findElement(By.id("gender")).click();
 
 
         // identify radio button then click
-       // WebElement radiobtn = driver.findElement(By.xpath("//*[@id='gender']"));
+        // WebElement radiobtn = driver.findElement(By.xpath("//*[@id='gender']"));
         WebElement radiobtn = driver.findElement(By.xpath("(//input[@type='radio'])[2]"));
         radiobtn.click();
 
@@ -44,6 +42,7 @@ public class AutomationPracticeForm {
         driver.findElement(By.id("dob")).sendKeys("2/2/1998");
         driver.findElement(By.id("subjects")).sendKeys("CSE");
         WebElement checkBox = driver.findElement(By.xpath("//*[@id='hobbies']"));
+
         // click the checkbox
         checkBox.click();
         driver.findElement(By.xpath("(//input[@type='checkbox'])[2]")).click();
